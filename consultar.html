@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consultar Evento</title>
+
+  <!-- Fuente Montserrat y estilos globales -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo.png" type="image/png" />
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Logo + volver al home -->
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo Asistente Vertical" class="logo">
+    </a>
+
+    <h1>Consultar Evento</h1>
+
+    <!-- Barra de filtros -->
+    <div class="filtros">
+
+      <!-- Buscar por nombre -->
+      <input type="text" id="buscador" placeholder="🔍 Buscar por nombre…">
+
+      <!-- Filtrar por tipo -->
+      <select id="filtroTipo">
+  <option value="">Todos los tipos</option>
+  <option>Fiesta de XV</option>
+  <option>Boda</option>
+  <option>Exteriores</option>
+  <option>Exteriores con amigas</option>
+  <option>Pre o Pos Boda</option>
+  <option>Egreso</option>
+  <option>Institucional</option>
+  <option>Reunión</option>
+</select>
+
+      </select>
+
+      <!-- Filtrar por mes -->
+      <select id="filtroMes">
+        <option value="">Todos los meses</option>
+        <option value="01">Enero</option><option value="02">Febrero</option>
+        <option value="03">Marzo</option><option value="04">Abril</option>
+        <option value="05">Mayo</option><option value="06">Junio</option>
+        <option value="07">Julio</option><option value="08">Agosto</option>
+        <option value="09">Septiembre</option><option value="10">Octubre</option>
+        <option value="11">Noviembre</option><option value="12">Diciembre</option>
+      </select>
+
+    </div>
+
+    <!-- Listado de resultados -->
+    <div id="listaEventos" class="lista"></div>
+
+    <!-- Mensaje de estado -->
+    <p id="estado" style="margin-top:20px;"></p>
+
+  </div>
+
+  <script src="consultar.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* ===========================
+   Estilos base y marca
+   =========================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F1F1F1;
+  color: #333333;
+}
+
+/* ===========================
+   Contenedor general
+   =========================== */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* ===========================
+   Logo
+   =========================== */
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   Título
+   =========================== */
+
+h1 {
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   Formulario
+   =========================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Cada grupo de campo */
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: left;
+  gap: 5px;
+}
+
+/* Inputs y selects */
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="tel"],
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* ===========================
+   Botones
+   =========================== */
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 1.1em;
+  padding: 12px 20px;
+  /* --------- aquí reemplazamos border:none --------- */
+  border: 2px solid #333333;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #FFFF00;
+  color: #333333;
+  transition: background-color 0.3s, transform 0.2s;
+  min-width: 220px;
+  align-self: center;
+}
+
+button:hover {
+  background-color: #e6e600;
+  transform: scale(1.02);
+}
+
+
+/* ===========================
+   Botonera de index
+   =========================== */
+
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.botones a {
+  text-decoration: none;
+}
+
+/* ===========================
+   Responsive
+   =========================== */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px 15px;
+  }
+}
+
+/* ---------- Tarjetas en Consultar Evento ---------- */
+.card{
+  background:#F1F1F1;
+  border:2px solid #333;
+  border-radius:12px;
+  margin:8px 0;
+  overflow:hidden;
+  font-family:'Montserrat',sans-serif;
+}
+.card-header{
+  padding:12px 16px;
+  font-weight:900;            /* Montserrat 900 */
+  cursor:pointer;
+  background:#FFFF00;         /* Amarillo marca */
+}
+.card-body{
+  padding:12px 16px;
+  font-weight:400;            /* Montserrat 400 */
+  background:#fff;
+}
+.card-body p{
+  margin:4px 0;
+}

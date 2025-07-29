@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Actualizar Evento</title>
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <!-- Estilos generales (incluye .accion) -->
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo + volver -->
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo Asistente Vertical" class="logo"/>
+    </a>
+
+    <h1>Actualizar Evento</h1>
+
+    <form id="formActualizar">
+      <!-- 1) Selector de evento -->
+      <div class="campo">
+        <label for="selEvento">Seleccionar evento:</label>
+        <select id="selEvento" name="selEvento" required>
+          <option value="">-- Busca y selecciona --</option>
+        </select>
+      </div>
+
+      <!-- 2) Botonera de acciones (oculta hasta elegir) -->
+      <div id="acciones" class="botones" style="display:none;">
+        <button type="button" id="btnPago"     class="accion">Agregar Pago Parcial</button>
+        <button type="button" id="btnPrecio"   class="accion">Modificar Precio</button>
+        <button type="button" id="btnEstado"   class="accion">Modificar Estado</button>
+        <button type="button" id="btnDivision" class="accion">División de Cuentas</button>
+        <button type="button" id="btnContacto" class="accion">Agregar N° de Contacto</button>
+        <button type="button" id="btnSalon"    class="accion">Agregar Salón</button>
+        <button type="button" id="btnEliminar" class="accion">Eliminar Evento</button>
+        <button type="button" id="btnRevert"   class="accion">Deshacer último cambio</button>
+      </div>
+    </form>
+
+    <!-- 3) Detalle -->
+    <div id="detalle" style="margin-top:20px;"></div>
+  </div>
+
+  <script src="actualizar.js"></script>
+</body>
+</html>
